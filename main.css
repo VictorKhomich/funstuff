@@ -1,0 +1,520 @@
+/*----------------------------------------------------------------------------------*/
+/*  General Styling
+/*----------------------------------------------------------------------------------*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.4;
+    margin: 0;
+    color: #1a2930;
+}
+
+a {
+    text-decoration: none;
+    color: #1a2930;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: end;
+    color: #1a2930;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #b6a88b;
+}
+
+h3 {
+    font-size: 1.125em;
+}
+
+.layout-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+} 
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+hr {
+    border-style: solid;
+    margin: 0;
+    width: 80px;
+    color: #b6a88b;
+}
+
+.p-top {
+    padding-top: 100px;
+}
+
+.handwriting-font {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 1.5em;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    background-color: #f0ede7;
+}
+
+input {
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 7px 0 7px 0;
+}
+
+button {
+    height: 50px;
+    outline: none;
+    background-color: #b6a88b;
+    border: none;
+    margin-top: 7px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #c4b9a2;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.title-space {
+    margin-bottom: 50px;
+}
+/*----------------------------------------------------------------------------------*/
+/*  Header
+/*----------------------------------------------------------------------------------*/
+.nav-container {
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.nav-box {
+    width: 62%;
+    align-self: center;
+}
+
+nav ul {
+    justify-content: space-between;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.075em;
+}
+
+nav a:hover {
+    color: #b6a88b;
+}
+/*----------------------------------------------------------------------------------*/
+/*  Animation
+/*----------------------------------------------------------------------------------*/
+.animation-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.animation {
+    position: absolute;
+}
+ 
+.animation-img {
+    animation: zoom-in 5s linear infinite;
+}
+
+ @keyframes zoom-in {
+    100% {
+        transform: scale3d(1.1,1.1,1.1);
+    }
+}
+
+.text-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;
+    animation: textup 5s linear infinite;
+    transform: translateY(100px);
+    background-color: hsl(0,0%,100%, 0.5);
+}
+
+.animation-1 {
+    animation: slide1 30s linear infinite;
+}
+
+.animation-2 {
+    animation: slide2 30s linear infinite;
+}
+
+.animation-3 {
+    animation: slide3 30s linear infinite;
+}
+
+.animation-4 {
+    animation: slide4 30s linear infinite;
+}
+
+.animation-5 {
+    animation: slide5 30s linear infinite;
+}
+
+.animation-6 {
+    animation: slide6 30s linear infinite;
+}
+
+
+@keyframes slide1 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: visible;
+    }
+    33.33% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    66.66% {
+        visibility: hidden;
+    }
+    83.33% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: hidden;
+    }
+    33.33% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    66.66% {
+        visibility: hidden;
+    }
+    83.33% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: hidden;
+    }
+    33.33% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    66.66% {
+        visibility: hidden;
+    }
+    83.33% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: hidden;
+    }
+    33.33% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    66.66% {
+        visibility: visible;
+    }
+    83.33% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide5 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: hidden;
+    }
+    33.33% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    66.66% {
+        visibility: hidden;
+    }
+    83.33% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide6 {
+    0% {
+        visibility: hidden;
+    }
+    16.66% {
+        visibility: hidden;
+    }
+    33.33% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    66.66% {
+        visibility: hidden;
+    }
+    83.33% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.text-box1 {
+    animation-delay: 0s;
+}
+
+.text-box2 {
+    animation-delay: 5s;
+}
+
+.text-box3 {
+    animation-delay: 10s;
+}
+
+.text-box4 {
+    animation-delay: 15s;
+}
+
+.text-box5 {
+    animation-delay: 20s;
+}
+
+.text-box6 {
+    animation-delay: 25s;
+}
+
+@keyframes textup {
+    10% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/*----------------------------------------------------------------------------------*/
+/*  About us
+/*----------------------------------------------------------------------------------*/
+.about-us-box {
+    flex-direction: column;
+    justify-content: space-between;
+}   
+/*----------------------------------------------------------------------------------*/
+/*  Actions
+/*----------------------------------------------------------------------------------*/
+.action-img {
+    width: 335px;
+    transform: translateX(64px);
+    padding: 30px 0 30px 0;
+}
+
+.gold-box {
+    width: 80%;
+}
+
+.action-text {
+    border: 2px solid #b6a88b;
+    padding: 30px;
+}
+
+.action-gold {
+    background-color: #b6a88b;
+    width: 90%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*----------------------------------------------------------------------------------*/
+/*  Appoitment
+/*----------------------------------------------------------------------------------*/
+.appointment-text {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-name {
+    margin-right: 7px;
+}
+
+.input-number {
+    margin-left: 7px;
+}
+
+.input-box {
+    margin-bottom: 7px;
+}
+
+.input-email {
+    margin: 7px 0 7px 0;
+}
+
+.p-bold {
+    font-weight: bold;
+    font-size: 1.124em;
+}
+/*----------------------------------------------------------------------------------*/
+/*  Info
+/*----------------------------------------------------------------------------------*/
+.info-gold {
+    background-color: #b6a88b;
+    align-items: center;
+}
+
+.white-box {
+    background-color: #ffffff;
+    padding: 70px;
+}
+
+.ul-p-top {
+    padding-top: 20px;
+}
+
+.google-maps {
+    align-self: center;
+    padding: 30px 0 30px 0;
+}
+/*----------------------------------------------------------------------------------*/
+/*  Info
+/*----------------------------------------------------------------------------------*/
+.info-container {
+    flex-direction: column;
+}
+
+.info-box {
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #F0EDE7;
+    margin-top: 50px;
+}
+
+.impressum-container {
+    padding: 50px 0 50px 0;
+}
+
+.impressum-box {
+    justify-content: space-between;
+}
+
+.space-between-box {
+    flex-direction: column;
+    align-content: space-between;
+}
+.social-media-icon {
+    width: 32px;
+}
+
+.social-media-icon :hover {
+    fill: #b6a88b;
+}
+
+.social-media-pinterest {
+    padding-right: 10px;
+}
+
+.social-media-instagram {
+    padding: 0 10px 0 10px;
+}
+
+.social-media-facebook {
+    padding-left: 10px;
+}
+
+.privacy {
+    font-size: 0.75em;
+}
+
+.m-20 {
+    margin: 0 20px 0 20px ;
+}
